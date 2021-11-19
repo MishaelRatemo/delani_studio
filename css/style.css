@@ -1,8 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rock+Salt&display=swap');
 
 body{
     box-sizing: border-box;
     margin: 0;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
 }
 #contact_us .form-control{
     background-color:transparent !important;
