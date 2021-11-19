@@ -6,7 +6,7 @@ body{
     font-size: 24px;
     font-family: 'Lato', sans-serif;
 }
-#contact_us .form-control{
+#contact_us input, textarea{
     background-color:transparent !important;
     /* border:none !important;     */
  }
