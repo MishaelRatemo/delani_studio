@@ -13,3 +13,6 @@ body{
  .form-control::placeholder{
      color: #fff;
  }
+ .one,.two,.three{
+     cursor: pointer;
+ }
