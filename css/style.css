@@ -16,3 +16,6 @@ body{
  .one,.two,.three{
      cursor: pointer;
  }
+ .service1, .service2, .service3{
+     display: none;
+ }
