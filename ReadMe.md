@@ -6,13 +6,6 @@
 The project is about DELANI STUDIO web Application. The application gives information about the services
 and products they offer. It also show what they have achieved through the portfolio. last but not least the 
 application allows the users to contact the DELANI studio via writing to then through filling an form. 
-## BDD 
-* Application allows not empty field
-* The Application only accepts numbers from user
-* Accepts number > 0 And <32 for day input
-* The app accept numbers 0-29 on the day if the month is February(2)
-* Input field for does not Accept a number equal to or less than 0 and greater than 12
-* use condition based on gender to assign the Akan name
 
  ## Live Demo page
  click [here]() to view 
