@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rock+Salt&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=New+Rocker&family=Rock+Salt&display=swap');
 body{
     box-sizing: border-box;
     margin: 0;
@@ -18,4 +18,51 @@ body{
  }
  .service1, .service2, .service3{
      display: none;
+     cursor: pointer;
  }
+ #nameErr, #mailErr, #msgErr {
+     background: #fff;
+     color: red;
+     margin:0 21px 0 0;
+     padding: 0 5px;
+     font-size: 16px;
+     font-weight: bolder;
+     display: inline-block;
+ }
+ 
+#contact_us{
+    background-image: url(../img/backgrounds/c_image.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+
+
+#project1-tittle,#project2-tittle,#peoject3-tittle,#project4-tittle,#project5-tittle,#project6-tittle,#project7-tittle,#project8-tittle{
+    position: relative;
+    font-size: 24px;
+    left:20%;
+    top: -50%;    
+    z-index: 10;
+    color:#E0AE49;
+    font-weight: 900;
+    font-size:xx-large;
+    font-family: 'New Rocker', cursive;
+    /* background:rgba(0, 0, 0, 0.6) ; */
+    width: 100%;
+    transition: 1.7s;
+}
+#project1,
+#project2,
+#peoject3,
+#project4,
+#project5,
+#project6,
+#project7,
+#project8{
+    position: relative;
+    overflow: hidden;
+    word-wrap:break-word ;
+}
+.portfolio{
+   /* background: rgba(0,0,0,0.7) */
+}
