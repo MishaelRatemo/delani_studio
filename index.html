@@ -87,38 +87,54 @@
         <div id="portfolio">
           <h3 class="text-center font-weight-bold">PORTFOLIO</h3>
           <div class="d-flex flex-wrap justify-content-center">
-            <div id="project1">
-              <img src="img/portfolio/work4.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-non" id="project1-tittle">Black Torch</h4>
+            <div id="project1" class="card">
+              <img src="img/portfolio/work4.jpg" alt="" class="card-img img-fluid portfolio p-2">
+              <div class="card-img-overlay  myborder d-flex align-items-center justify-content-center">
+                <h4 class="d-none font-weight-bolder text-white display-4 text-center" id="project1-tittle">Black Torch</h4>
+              </div>
             </div>
-            <div id="project2">
-              <img src="img/portfolio/work3.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-non" id="project2-tittle">Mighty Ontario</h4>
+            <div id="project2" class="card">
+              <img src="img/portfolio/work3.jpg" alt="" class="img-fluid portfolio p-2" alt="Black image">
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-warning display-4 text-center" id="project2-tittle">Mighty Ontario</h4>
+                </div>
             </div>
-            <div id="peoject3">
+            <div id="project3" class="card">
               <img src="img/portfolio/work2.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-none" id="peoject3-tittle">Orange Triangle</h4>
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-dark display-4 text-center" id="peoject3-tittle">Orange Triangle</h4>
+                </div>
             </div>
-            <div id="project4">
+            <div id="project4" class="card">
               <img src="img/portfolio/work1.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-none" id="project4-tittle">Jimmy carey</h4>
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-white display-4 text-center" id="project4-tittle">Jimmy carey</h4>
+                </div>
             </div>
-            <div id="project5">
+            <div id="project5" class="card">
               <img src="img/portfolio/work5.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-none" id="project5-tittle">Good Day</h4>
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-primary display-4 text-center" id="project5-tittle">Good Day</h4>
+                </div>
             </div>
-            <div id="project6">
+            <div id="project6" class="card">
               <img src="img/portfolio/work6.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-none" id="project6-tittle">Age Calculator</h4>
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-info display-4 text-center" id="project6-tittle">Age Calculator</h4>
+                </div>
             </div>
-            <div id="project7">
+            <div id="project7" class="card">
               <img src="img/portfolio/work7.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-none" id="project7-tittle">Burned C</h4>
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-white display-4 text-center" id="project7-tittle">Burned C</h4>
+                </div>
             </div>
-            <div id="project8">
+            <div id="project8" class="card">
               <img src="img/portfolio/work8.jpg" alt="" class="img-fluid portfolio p-2">
-              <h4 class="d-none" id="project8-tittle">Girrafe Restaurant</h4>
-          </div>
+              <div class="card-img-overlay myborder d-flex align-items-center justify-content-center">
+                <h4 class="font-weight-bolder text-info display-4 text-center" id="project8-tittle">Girrafe Restaurant</h4>
+              </div>
+            </div>
           </div>
         </div>
         <!-- contact us -->
@@ -127,9 +143,13 @@
                 <img src="img/backgrounds/c_image.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay text-center justify-content-center container w-50">
                   <h3 class="text-white font-weight-bold">CONTACT US</h3>
-                  
-                    <form id="form_data">
-                      <h5 id="umessage">MiMi</h5>
+                  <div class="message">
+                    <div class="messageText">
+                        <!-- <h4 id="uSuccess" class="alert alert-success"></h4> -->
+                    </div>
+                  </div>
+                  <!-- <h5 id="uSuccess" style="background-color: lightgreen; color: black;"></h5> -->
+                    <form id="form_data">                      
                       <div class="input-group p-2 ">
                         <div class="col">
                           <input type="text" id="uname" class="form-control text-white " placeholder="Name..." >
@@ -140,7 +160,7 @@
                       </div>
                       <div id="nameErr"></div> <div id="mailErr"></div>
                       <div class="input-group p-2">
-                        <textarea  id="umessage" class="form-control text-white" cols="20" rows="7" placeholder="Your Message..."></textarea>
+                        <textarea type="text" id="umessage" class="form-control text-white" cols="20" rows="7" placeholder="Your Message..."></textarea>
                       </div>
                       <div id="msgErr"></div>
                       <div class="row">
@@ -172,5 +192,6 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    <!-- <script src="marcos.js"></script> -->
 </body>
 </html>
