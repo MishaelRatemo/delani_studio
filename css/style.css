@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=New+Rocker&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 body{
     box-sizing: border-box;
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
 }
+
 #contact_us input, textarea{
     background-color:transparent !important;
     /* border:none !important;     */
@@ -33,36 +35,39 @@ body{
 #contact_us{
     background-image: url(../img/backgrounds/c_image.jpg);
     background-size: cover;
-    height: 60vh;
+    height: 50vh;
+}
+
+.myborder{
+    border: 5px solid white;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    font-family: 'Russo One', sans-serif;
+    
+}
+.maincontainer{
+    position: relative;
+}
+.overlay-text1,
+.overlay-text2, 
+.overlay-text3,
+.overlay-text4,
+.overlay-text5,
+.overlay-text6, 
+.overlay-text7,
+.overlay-text8 {
+    display: block;
+    background: rgba(50, 50, 50, .7);
+    opacity: 0;/* on hover opacity to 18*/
+    transition: opacity 2s;
 }
 
 
-#project1-tittle,#project2-tittle,#peoject3-tittle,#project4-tittle,#project5-tittle,#project6-tittle,#project7-tittle,#project8-tittle{
-    position: relative;
-    font-size: 24px;
-    left:20%;
-    top: -50%;    
-    z-index: 10;
-    color:#E0AE49;
-    font-weight: 900;
-    font-size:xx-large;
-    font-family: 'New Rocker', cursive;
-    /* background:rgba(0, 0, 0, 0.6) ; */
-    width: 100%;
-    transition: 1.7s;
-}
-#project1,
-#project2,
-#peoject3,
-#project4,
-#project5,
-#project6,
-#project7,
-#project8{
-    position: relative;
-    overflow: hidden;
-    word-wrap:break-word ;
-}
-.portfolio{
-   /* background: rgba(0,0,0,0.7) */
-}
+
+
+
+
+
+
+
