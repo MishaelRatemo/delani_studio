@@ -58,7 +58,6 @@ function removerAlert() {
   }
 }
  
-$();
 $(document).ready(function(){
  $(".one").click(function(){ 
       $(".one").fadeIn('slow').hide();
@@ -98,23 +97,69 @@ $(document).ready(function(){
       });
 });
   
-// Mouse Hover Effects on portfolio
+// Mouse Hover Effects on portfolios
+
 $(document).ready(function(){
-        $("#project1").mouseover(function(){
-        $("#project1").removeClass('d-none');
-        $(".myborder").css.borderColor('white');
-        $("#project1-tittle").show();
-        }).mouseout(function(){
-          $("#project1-tittle").hide();
-        });
+    $(".overlay-text1").mouseover(function(){
+      $(".overlay-text1").css("opacity","1");
+    }).mouseout(function(){
+      $(".overlay-text1").css("opacity","0");;
+    });
 });
 
 $(document).ready(function(){
-    $(".portfolio").mouseover(function(){
-      $(".portfolio").css("background","rgba( 55,55,55 .6)");
-    }).mouseout(function(){
-      $("#project1-tittle").hide();
-    });
+  $(".overlay-text2").mouseover(function(){
+    $(".overlay-text2").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text2").css("opacity","0");;
+  });
+});
+$(document).ready(function(){
+  $(".overlay-text3").mouseover(function(){
+    $(".overlay-text3").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text3").css("opacity","0");;
+  });
+})
+
+$(document).ready(function(){
+  $(".overlay-text4").mouseover(function(){
+    $(".overlay-text4").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text4").css("opacity","0");;
+  });
+});
+
+$(document).ready(function(){
+  $(".overlay-text5").mouseover(function(){
+    $(".overlay-text5").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text5").css("opacity","0");;
+  });
+});
+
+$(document).ready(function(){
+  $(".overlay-text6").mouseover(function(){
+    $(".overlay-text6").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text6").css("opacity","0");;
+  });
+});
+
+$(document).ready(function(){
+  $(".overlay-text7").mouseover(function(){
+    $(".overlay-text7").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text7").css("opacity","0");;
+  });
+});
+
+$(document).ready(function(){
+  $(".overlay-text8").mouseover(function(){
+    $(".overlay-text8").css("opacity","1");
+  }).mouseout(function(){
+    $(".overlay-text8").css("opacity","0");;
+  });
 });
 
 
