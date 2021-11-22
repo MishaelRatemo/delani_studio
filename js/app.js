@@ -5,17 +5,16 @@
   var nameErr = document.getElementById('nameErr');
   var mailErr = document.getElementById('mailErr');
   var msgErr = document.getElementById('msgErr');
-  
+  var successAlert = document.getElementById('uSuccess');  
 
   u_form.addEventListener('submit', validate);
 
   function validate(e) {
+    // removeAlert();
     e.preventDefault();  
     var nName = uName.value.trim(); 
     var mMail = uMail.value.trim();
-    var mMessage = uMessage.value.trim();
-     
-     
+    let mMessage = uMessage.value;    
         
             if (nName ===""){
                nameErr.innerHTML="Name is required.";
@@ -24,8 +23,7 @@
                nameErr.innerHTML="";
                mailErr.innerHTML=" Enter email address ";
                uMail.style.borderColor='red';
-               uName.style.borderColor='white';
-               
+               uName.style.borderColor='white';               
             }else if (mMessage ===""){
                mailErr.innerHTML="";
                msgErr.innerHTML=" Please we need to hear from you!!";
@@ -33,29 +31,33 @@
                uMail.style.borderColor='white';
             } 
             else {
+              // alert('Thanks you');
+              console.log(nName +" "+ mMessage)
                 uMessage.style.borderColor='white';
-                msgErr.innerHTML="";
+                msgErr.innerHTML=""; 
+               // upon successful validation create an alert                        
+              var h5 = document.createElement('h5');
+              h5.className= "alert alert-success";
+              h5.appendChild(document.createTextNode(`Thank you ${nName} We have received your feedback.`));
+              var container = document.querySelector('.message');
+              var childContainer = document.querySelector('.messageText');
+              container.insertBefore(h5,childContainer);
 
-
-                // const Success=() => {
-                                       
-                //    document.getElementById('umessage').innerHTML=" Thank you "+ nName +". We have received your feedback. ";  
-                   alert('Thanks you')  ;               
-                
-                // }
-
-                
-
-                // setTimeout(Success,4000);
-                // Success();
+              // document.getElementById('uSuccess').innerHTML=`Thank you ${nName}  We have received your feedback.`; 
+              u_form.reset();                        
             }
-                  
+            // alert to disappear after 3secs
+            setTimeout(() => {
+              removerAlert();
+            }, 4000);                          
 }    
-        
-
-
-
-
+function removerAlert() {
+  var myAlert =document.querySelector('.alert');
+  if (myAlert){
+      myAlert.remove();
+  }
+}
+ 
 $();
 $(document).ready(function(){
  $(".one").click(function(){ 
@@ -98,10 +100,10 @@ $(document).ready(function(){
   
 // Mouse Hover Effects on portfolio
 $(document).ready(function(){
-
         $("#project1").mouseover(function(){
         $("#project1").removeClass('d-none');
-          $("#project1-tittle").show();
+        $(".myborder").css.borderColor('white');
+        $("#project1-tittle").show();
         }).mouseout(function(){
           $("#project1-tittle").hide();
         });
