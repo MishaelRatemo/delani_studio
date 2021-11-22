@@ -8,7 +8,7 @@ and products they offer. It also show what they have achieved through the portfo
 application allows the users to contact the DELANI studio via writing to then through filling an form. 
 
  ## Live Demo page
- click [here]() to view 
+ click [here](https://mishaelratemo.github.io/delani_studio/) to view 
 
 
  ## Technologies Used
